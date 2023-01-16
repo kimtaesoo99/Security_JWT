@@ -1,4 +1,4 @@
-경package com.example.study.jwt;
+package com.example.study.jwt;
 
 import com.example.study.dto.TokenDto;
 import io.jsonwebtoken.*;
