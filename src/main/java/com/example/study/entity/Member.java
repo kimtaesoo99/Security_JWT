@@ -1,4 +1,4 @@
-package com.example.jwt.entity;
+package com.example.study.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -9,14 +9,14 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class Member {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+    @Column(name = "member_id")
     private Long id;
 
-    @Column(name = "username", length = 50, unique = true)
-    private String username;
+    @Column(name = "name", length = 50)
+    private String name;
 
     @Column(name = "password", length = 100)
     private String password;
@@ -24,8 +24,6 @@ public class User {
     @Column(name = "nickname", length = 50)
     private String nickname;
 
-    @Column(name = "activated")
-    private boolean activated;
 
     @Enumerated(EnumType.STRING)
     private Authority authority;
