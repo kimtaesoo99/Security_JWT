@@ -1,4 +1,4 @@
-package com.example.jwt.controller;
+package com.example.study.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
